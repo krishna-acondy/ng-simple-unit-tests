@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { DashboardModule } from './dashboard/dashboard.module';
+import { DashboardTestModule } from './dashboard/dashboard.test.module';
 
 @NgModule({
   declarations: [
@@ -10,9 +10,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
   ],
   imports: [
     BrowserModule,
-    DashboardModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    DashboardTestModule
+  ]
 })
-export class AppModule { }
+export class AppTestModule { }

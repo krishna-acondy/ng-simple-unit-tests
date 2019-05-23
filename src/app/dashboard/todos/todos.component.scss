@@ -1,0 +1,24 @@
+ul {
+    list-style-type: none;
+
+    .item {
+        border-radius: 5px;
+        color: white;
+        padding: 1%;
+        margin: 0.5%;
+        opacity: 0.75;
+
+        &.todo {
+            background-color: red;
+        }
+
+        &.in-progress {
+            background-color: yellow;
+            color: black;
+        }
+
+        &.done {
+            background-color: green;
+        }
+    }
+}

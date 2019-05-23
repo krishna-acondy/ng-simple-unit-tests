@@ -1,0 +1,6 @@
+<ng-container *ngIf='todos$ | async as todos'>
+  <h2>Things to do</h2>
+  <ul>
+      <li *ngFor='let todo of todos' class='item' [ngClass]='todo.status'>{{ todo.text }}</li>
+    </ul>
+</ng-container>
